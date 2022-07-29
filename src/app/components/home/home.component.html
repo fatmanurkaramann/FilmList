@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./home.component.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="toggle" class="toggle">
+        <a><i class="fa fa-bars" aria-hidden="true" routerLink="/menu"></i></a>
+      </div>
+      <button class="logButton" routerLink="/login">Log Out</button>
+      <div id="menu" class="menu">
+        <h2 style="text-align: center">FİLM GENRES</h2>
+        <ul id="filmUl" class="films">
+          <li class="filmsLi"><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="header">
+        <div class="headerText">
+          <p>NO ONE WANTS TO BE THE</p>
+          <h1
+            style="text-align: center; color: #ffc300; font-family: MS Gothic"
+          >
+            SHEEP
+          </h1>
+        </div>
+
+        <img
+          src="https://images.squarespace-cdn.com/content/609ad285b2747258c8da5644/a11db4c6-db62-4e7a-8306-e2653dbf76c9/Stamp+Vector+Logo.png?format=1500w&content-type=image%2Fpng"
+          class="imageHeader"
+        />
+
+        <i
+          class="fa-brands fa-youtube"
+          style="background-color: red; border-radius: 50%; color: white"
+        ></i>
+        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <div class="playIcon">
+          <i class="fa fa-play" style="color: black"></i>
+          <p
+            style="
+              text-align: center;
+              top: -140%;
+              left: 46%;
+              position: absolute;
+            "
+          >
+            Watch Video
+          </p>
+        </div>
+      </div>
+
+      <p id="textCard">S E R V İ C E S</p>
+      <hr style="width: 5%" />
+
+      <div class="card">
+        <div class="cards">
+          <p>Brand</p>
+          <p>Architecture</p>
+        </div>
+        <div class="cards">
+          <p>Brand</p>
+          <p>Management</p>
+        </div>
+        <div class="cards">
+          <p>Design</p>
+          <p>Consulting</p>
+        </div>
+      </div>
+
+      <div class="innerContainer">
+        <div class="menus">
+          <p id="text">P O R T F O L I O</p>
+          <hr style="width: 5%" />
+          <button>All</button>
+          <button>Photo</button>
+          <button>Grafic</button>
+          <button>Video</button>
+          <div class="slider">
+            <ul id="pictures">
+              <li><img src="assets/images/1.jpg" /></li>
+              <li><img src="assets/images/2.jpg" /></li>
+              <li><img src="assets/images/3.jpg" /></li>
+              <li><img src="assets/images/4.jpg" /></li>
+            </ul>
+            <ul id="buttons">
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <h2 id="textClient">C L I E N T S</h2>
+        <hr style="width: 5%" />
+        <ul class="listClient">
+          <li>FORBES</li>
+          <li>TDW</li>
+          <li>business</li>
+        </ul>
+      </div>
+      <div class="blogContainer">
+        <div style="background-color: gray">
+          DESIGN MOTIVATION
+          <h2>The Small Change That Creates</h2>
+          <h2>Massive Results In Your Life</h2>
+
+          <button class="buttonDesign">READ HERE</button>
+        </div>
+        <div>
+          FREELANCING
+          <h2>Know Yourself Your</h2>
+          <h2>Inner Power</h2>
+
+          <button class="buttonFreelanc">READ HERE</button>
+        </div>
+      </div>
+
+      <div class="contactContainer">
+        <h2 style="text-align: center">G E T I N T O U C H</h2>
+        <hr style="width: 10%" />
+        <p style="text-align: center">New Accepting Limited Clients</p>
+        <div class="contactCard">
+          <h2 style="text-align: center">CONTACT FORM</h2>
+          <label type="text" for="fname" id="l1">Full Name:</label><br />
+          <br />
+          <hr style="color: orange" />
+          <label for="lname" id="l2">Email:</label><br />
+          <br />
+          <hr />
+          <button class="sendBtn">Send Now</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <img
+        src="https://images.squarespace-cdn.com/content/609ad285b2747258c8da5644/a11db4c6-db62-4e7a-8306-e2653dbf76c9/Stamp+Vector+Logo.png?format=1500w&content-type=image%2Fpng"
+        class="imageFooter"
+      />
+      <p>
+        URBAN WOLF LLC<br />
+        <a>copyright 2017 urban wolf management llc. allrights reserved</a>
+      </p>
+    </footer>
+  </body>
+</html>
+<script></script>

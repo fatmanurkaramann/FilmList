@@ -1,0 +1,16 @@
+<body>
+  <div class="row row-cols-1 row-cols-md-3 g-4" id="container">
+    <div class="buttonDiv">
+      <button routerLink="/menu" class="button">Geri</button>
+    </div>
+
+    <div class="col" *ngFor="let film of films">
+      <div class="card h-100" id="cards">
+        <img src="..." class="card-img-top" />
+        <div class="card-body" style="background-color: white">
+          <h5 class="card-title">{{ film.title }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

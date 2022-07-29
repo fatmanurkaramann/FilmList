@@ -1,0 +1,83 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "employees": [
+        {
+          "id": 1,
+          "first_name": "Sebastian",
+          "last_name": "Eschweiler",
+          "email": "sebastian@codingthesmartway.com"
+        },
+        {
+          "id": 2,
+          "first_name": "Steve",
+          "last_name": "Palmer",
+          "email": "steve@codingthesmartway.com"
+        },
+        {
+          "id": 3,
+          "first_name": "Ann",
+          "last_name": "Smith",
+          "email": "ann@codingthesmartway.com"
+        }
+      ]
+    }
+  ],
+  "signUpUsers": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "fullName": "Fatma Nur",
+      "email": "fatmanurkaraman74@gmail.com",
+      "mobileNumber": 234,
+      "password": "121312",
+      "id": 12
+    },
+    {
+      "fullName": "Fatma Nur",
+      "email": "fatmanurkaraman74@gmail.com",
+      "mobileNumber": 5392219685,
+      "password": "123",
+      "id": 14
+    },
+    {
+      "fullName": "Fatma Nur",
+      "email": "fatmanurkaraman74@gmail.com",
+      "mobileNumber": 2242,
+      "password": "2434",
+      "id": 15
+    },
+    {
+      "fullName": "Fatma Nur",
+      "email": "fatmanurkaraman74@gmail.com",
+      "mobileNumber": 42342,
+      "password": "43242",
+      "id": 16
+    },
+    {
+      "fullName": "Fatma Nur",
+      "email": "fatmanurkaraman74@gmail.com",
+      "mobileNumber": 42,
+      "password": "2422",
+      "id": 17
+    },
+    {
+      "fullName": "Fatma Nur",
+      "email": "fatmanurkaraman74@gmail.com",
+      "mobileNumber": 4435,
+      "password": "4352",
+      "id": 18
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

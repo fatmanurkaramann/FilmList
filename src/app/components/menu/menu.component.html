@@ -1,0 +1,30 @@
+<div id="menu" class="menu">
+  <h2 style="text-align: center">FİLM GENRES</h2>
+  <button
+    routerLink="/home"
+    style="
+      background: rgb(73, 67, 67);
+      background: linear-gradient(
+        130deg,
+        rgba(73, 67, 67, 1) 20%,
+        rgba(139, 139, 139, 1) 80%
+      );
+      padding: 8px;
+      margin: 10px;
+      border: none;
+    "
+  >
+    Geri
+  </button>
+  <ul id="filmUl" class="films">
+    <li *ngFor="let genre of genres" class="filmsLi">
+      <a routerLink="/genre/{{ genre.genre }}"> {{ genre.genre }}</a>
+    </li>
+  </ul>
+  <br>
+  <app-carousel [images]="images"
+  [autoSlide]="true"
+  ></app-carousel>
+
+</div>
+
