@@ -36,19 +36,10 @@ button:hover {
   transform: translate(-50%,-50%);
   left: 50%;
   top: 10%;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
-  animation: effect 2s linear infinite;
-  color: transparent;
+  background: -webkit-linear-gradient(rgb(205, 172, 223), rgb(58, 37, 196));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-@keyframes effect {
-  0% {
-    background: linear-gradient(#93ffd8, #14c38e, #93ffd8);
-    -webkit-background-clip: text;
-  }
 
-  100% {
-    background: linear-gradient(#3ce7d7, #000fff);
-    -webkit-background-clip: text;
-  }
-}

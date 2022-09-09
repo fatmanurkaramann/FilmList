@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarouselModule } from './components/carousel/carousel.module';
 import { SliderComponent } from './components/slider/slider.component';
 
+
 @NgModule({
   declarations: [AppComponent, HomeComponent, MenuComponent, GenreComponent, SignUpComponent, LoginComponent,  SliderComponent],
   imports: [

@@ -38,30 +38,20 @@ button:hover {
   top: 9%;
   font-size: 30px;
   font-weight: bold;
-  animation: effect 2s linear infinite;
-  color: transparent;
+  background: -webkit-linear-gradient(rgb(205, 172, 223), rgb(58, 37, 196));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-@keyframes effect {
-  0% {
-    background: linear-gradient(#93ffd8, #14c38e, #93ffd8);
-    -webkit-background-clip: text;
-  }
 
-  100% {
-    background: linear-gradient(#3ce7d7, #000fff);
-    -webkit-background-clip: text;
-  }
-}
-.form-control.ng-touched.ng-invalid{
+.form-control.ng-touched.ng-invalid {
   border: 1px solid red;
-
 }
-.form-control.ng-touched.ng-invalid:hover{
+.form-control.ng-touched.ng-invalid:hover {
   box-shadow: 0 10px 20px 0 #df2828, 0 15px 50px 0 #f9f9f9;
 }
-.form-control.ng-touched.ng-valid{
+.form-control.ng-touched.ng-valid {
   border: 1px solid green;
 }
-.form-group input:hover{
+.form-group input:hover {
   box-shadow: 0 10px 20px 0 #2f617e, 0 15px 50px 0 #f9f9f9;
 }

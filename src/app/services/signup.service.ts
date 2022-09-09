@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { SignUpUsers } from '../models/users';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 export class SignupService {
   public signupForm: FormGroup;
   private url = 'http://localhost:3000/signUpUsers';
-   value: any;
+   private value: any;
 
   constructor(
     private http: HttpClient,
@@ -17,8 +18,11 @@ export class SignupService {
     private router: Router
   ) {}
 
-  signedUser(){
+    signedUser(){
 
+     let  value=this.value
+    let newPath = this.url;
+    return this.http.post<any>(newPath,this.signupForm.value);
   }
 
 }

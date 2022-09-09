@@ -1,12 +1,11 @@
 <div class="container">
   <div style="height: 100px">
-    <p id="text">SIGN UP</p>
+    <h1 id="text">SIGN UP</h1>
   </div>
 
   <div class="col-md-6">
     <div class="card">
-
-      <form  [formGroup]="signupForm" (ngSubmit)="signUp()" >
+      <form [formGroup]="signupForm" (ngSubmit)="signUp()">
         <div class="form-group">
           <label for="exampleInputPassword1">Full Name</label>
           <input
@@ -14,12 +13,16 @@
             type="text"
             class="form-control"
             id="fullName"
-            placeholder=""
+            placeholder="Enter Full Name"
             name="fullName"
           />
 
-          <small *ngIf="name.invalid" class="text-danger">this is required</small>
-          <br>
+          <span *ngIf="name.invalid; else falseBtn" class="text-danger"
+            >this is required</span
+          >
+          <ng-template #falseBtn>
+            <span></span>
+          </ng-template>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Mobile Number</label>
@@ -28,12 +31,15 @@
             type="number"
             class="form-control"
             id="exampleInputPassword1"
-            placeholder=""
+            placeholder="Enter Mobile Number"
             name="mobileNumber"
           />
-
-          <span *ngIf="mobileNumber.invalid" class="text-danger">this is required</span>
-          <br>
+          <span *ngIf="mobileNumber.invalid; else falseBtn" class="text-danger"
+            >this is required</span
+          >
+          <ng-template #falseBtn>
+            <span></span>
+          </ng-template>
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
@@ -47,11 +53,13 @@
             name="email"
           />
 
-          <span *ngIf="email.invalid" class="text-danger">this is required</span>
-          <br>
-          <small id="emailHelp" class="form-text text-muted"
-            >We'll never share your email with anyone else.</small
+          <span *ngIf="email.invalid; else falseBtn" class="text-danger"
+            >this is required</span
           >
+          <ng-template #falseBtn>
+            <span></span>
+          </ng-template>
+
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
@@ -63,8 +71,12 @@
             placeholder="Password"
             name="password"
           />
-          <span *ngIf="password.invalid" class="text-danger">this is required</span>
-          <br>
+          <span *ngIf="password.invalid; else falseBtn" class="text-danger"
+            >this is required</span
+          >
+          <ng-template #falseBtn>
+            <span></span>
+          </ng-template>
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
@@ -72,10 +84,15 @@
             >Check me out</label
           >
         </div>
-        <button [disabled]="signupForm.invalid" type="submit" class="btn btn-primary">SIGN UP</button>
+        <button
+          [disabled]="signupForm.invalid"
+          type="submit"
+          class="btn btn-primary"
+        >
+          SIGN UP
+        </button>
       </form>
-      <a routerLink="/login">Already register?</a>
+      <a routerLink="/home">Already register?</a>
     </div>
   </div>
 </div>
-

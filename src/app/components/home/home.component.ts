@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
       return false;
     });
      var slider = 0;
-     var time=1500;
+     var time=3500;
       $.Don = function(e: any){
       $(".slider #pictures li").hide();
       $(".slider #buttons li").removeClass("active");
